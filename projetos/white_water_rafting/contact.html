@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>White Water Rafting</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div id="content">
+      <header>
+        <div class="logo-box">
+          <img src="https://byui-cit.github.io/wdd130/resources/images/logos/mylogo.png" alt="Logo image"/>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rafting.html">Rafting</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="rates_dates.html">Rates/Dates</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <!--<li><a href="#">Team</a></li>-->
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <div class="banner-box">
+          <img src="https://byui-cit.github.io/wdd130/resources/images/salmon-kayak-banner2.jpg" alt="banner image"
+          />
+        </div>
+        <div class="contact">
+          <h2 class="contact-headline">Fill out our form and our team will contact you for more information</h2>
+
+          <form method="post" id="fContact" action="">
+
+            <fieldset id="form"><legend>Responsible adult information</legend>
+            <p><label for="cFirst">First name:</label>
+            <input type="text" id="cFirst" name="tFirst" size="20" maxlength="20" placeholder="Your first name here"></p>
+            <p><label for="cLast">Last name:</label>
+            <input type="text" id="cLast" name="tLast" size="20" maxlength="20" placeholder="Your last name here"></p>
+            <p><label for="cBirth">Date of Birth:</label>
+            <input type="date" id="cBirth" name="tBirth"></p>
+            <p><label for="tel">Your phone number:</label> 
+            <input type="tel" name="tel" id="tel" placeholder="Enter a valid number"></p> 
+            <p><label for="email">Please enter your email:</label>
+            <input type="email" id="email" name="email" size="20" maxlength="40" placeholder="Enter a valid email"></p>
+            <p><label for="cAddress">Address:</label>
+            <input type="text" id="cAddress" name="tAddress" size="20" maxlength="80" placeholder="Your address here"></p>
+            <p><label for="cState">State:</label>
+              <select>                
+                <option value="UT" selected>Utah</option>
+                <option value="ID">Idaho</option>
+                <option value="AZ">Arizona</option>
+                <option value="CO">Colorado</option>
+                <option value="NV">Nevada</option>
+                <option value="WY">Wyoming</option>
+              </select></p>     
+            </fieldset>
+            <fieldset id="trip"><legend>Where will you make your trip?</legend>
+              <input type="radio" name="tRadio" id="salmon" checked> <label for="salmon">Main Fork of the Salmon River, Idaho</label><br>
+              <input type="radio" name="tRadio" id="desolation"> <label for="desolation">Desolation and Gray Canyon, Utah</label><br>
+              <input type="radio" name="tRadio" id="arizona"> <label for="arizona">Grand Canyon, Arizona</label><br>
+            </fieldset>
+            <fieldset id="msg"><legend>Leave us your message</legend>              
+              <textarea name="tMsg" id="cMsg" cols="45" rows="8" placeholder="Your message here"></textarea>  
+            </fieldset>
+            <input type="submit" name="bSubmit" id="cSubmit" value="Submit" />
+          </form>
+
+        </div>          
+      </main>
+
+      <footer>
+        <p>
+          &copy; 2020 - Juliano Duarte - WDD130 14 - BYU-I online student
+        </p>
+        <div class="social">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img
+              alt="facebook"
+              src="https://cdn.glitch.com/cc1646ad-b511-4d8f-91b7-b45802e35bd3%2Ffacebook.png?v=1589630571117"
+            />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img
+              alt="instagram"
+              src="https://cdn.glitch.com/cc1646ad-b511-4d8f-91b7-b45802e35bd3%2Finstagram.png?v=1589630583058"
+            />
+          </a>
+          <a href="https://www.youtube.com/" target="_blank">
+            <img
+              alt="youtube"
+              src="https://cdn.glitch.com/cc1646ad-b511-4d8f-91b7-b45802e35bd3%2Fyoutube.png?v=1589630590387"
+            />
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
